@@ -1,0 +1,51 @@
+{
+  "name": "armandsar/betvictor-broccoli",
+  "description": "Api client for betvictor",
+  "keywords": [
+    "armandsar",
+    "api",
+    "betvictor",
+    "sports",
+    "betting",
+    "tips"
+  ],
+  "homepage": "https://github.com/armandsar/betvictor-broccoli",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Armands Leinieks",
+      "email": "armands.leinieks@gmail.com",
+      "homepage": "https://sezy.lv",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": ">=5.1.0",
+    "guzzlehttp/guzzle": "~5.3|~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.*",
+    "mockery/mockery": "^0.9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Armandsar\\BetVictorBroccoli\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Armandsar\\BetVictorBroccoli\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Armandsar\\BetVictorBroccoli\\ServiceProvider"
+      ]
+    }
+  }
+}
